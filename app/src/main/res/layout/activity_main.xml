@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Valor da Conta (R$)"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/txtValorConta"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:translationY="5dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gorjeta (%)"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:translationY="10dp" />
+
+        <EditText
+            android:id="@+id/txtGorjetaPorc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:translationY="15dp" />
+
+        <TextView
+            android:id="@+id/oResul"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:translationY="25dp" />
+
+        <TextView
+            android:id="@+id/totalConta"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            tools:translationY="42dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Dividir por quantas pessoas"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:translationY="50dp" />
+
+        <EditText
+            android:id="@+id/totalPessoas"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:translationY="60dp" />
+
+        <TextView
+            android:id="@+id/valorPessoa"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:translationY="70dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cal"
+            android:text="Calcular"
+            android:translationY="80dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
